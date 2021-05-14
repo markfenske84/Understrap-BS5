@@ -48,11 +48,6 @@
 
   .wpcf7-form {
 
-    // set paragraphs to behave like divs with class .form-group
-    p {
-      @extend .form-group;
-    }
-
     // let labels be 100%
     label {
       width: 100%;

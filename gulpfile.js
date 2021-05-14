@@ -127,7 +127,7 @@ gulp.task( 'styles', function( callback ) {
 /**
  * Watches .scss, .js and image files for changes.
  * On change re-runs corresponding build task.
- * 
+ *
  * Run: gulp watch
  */
 gulp.task( 'watch', function() {
@@ -171,7 +171,7 @@ gulp.task(
 /**
  * Starts watcher with browser-sync.
  * Browser-sync reloads page automatically on your browser.
- * 
+ *
  * Run: gulp watch-bs
  */
 gulp.task( 'watch-bs', gulp.parallel( 'browser-sync', 'watch' ) );
@@ -182,7 +182,7 @@ gulp.task( 'watch-bs', gulp.parallel( 'browser-sync', 'watch' ) );
 gulp.task( 'scripts', function() {
 	var scripts = [
 		// Start - All BS4 stuff
-		paths.dev + '/js/bootstrap4/bootstrap.bundle.js',
+		paths.dev + '/js/bootstrap5/bootstrap.bundle.js',
 		paths.dev + '/js/themejs/*.js',
 
 		// End - All BS4 stuff
@@ -222,12 +222,12 @@ gulp.task( 'copy-assets', function( done ) {
 	// Copy all JS files
 	var stream = gulp
 		.src( paths.node + '/bootstrap/dist/js/**/*.js' )
-		.pipe( gulp.dest( paths.dev + '/js/bootstrap4' ) );
+		.pipe( gulp.dest( paths.dev + '/js/bootstrap5' ) );
 
 	// Copy all Bootstrap SCSS files
 	gulp
 		.src( paths.node + '/bootstrap/scss/**/*.scss' )
-		.pipe( gulp.dest( paths.dev + '/sass/bootstrap4' ) );
+		.pipe( gulp.dest( paths.dev + '/sass/bootstrap5' ) );
 
 	////////////////// End Bootstrap 4 Assets /////////////////////////
 
@@ -247,8 +247,8 @@ gulp.task( 'copy-assets', function( done ) {
 // Deleting the files distributed by the copy-assets task
 gulp.task( 'clean-vendor-assets', function() {
 	return del( [
-		paths.dev + '/js/bootstrap4',
-		paths.dev + '/sass/bootstrap4',
+		paths.dev + '/js/bootstrap5',
+		paths.dev + '/sass/bootstrap5',
 		paths.fonts + '/*wesome*.{ttf,woff,woff2,eot,svg}',
 		paths.dev + '/sass/fontawesome',
 		paths.js + paths.vendor,

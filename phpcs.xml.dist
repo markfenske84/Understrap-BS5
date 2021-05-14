@@ -76,7 +76,7 @@
 		</properties>
 	</rule>
 
-	<!-- 
+	<!--
 		Exclude checking of line endings when reporting errors, but fix them
 		when running phpcbf.
 	-->
@@ -87,12 +87,12 @@
 	<!-- Use the WPThemeReview Ruleset -->
 	<rule ref="WPThemeReview" />
 
-	<!-- 
+	<!--
 		Exclude checking for shortened URLs in Bootstrap's js. files.
 		Also exlude theme.js which includes bootstrap.js.
 	-->
 	<rule ref="WPThemeReview.Privacy.ShortenedURLs.Found">
-		<exclude-pattern>/src/js/bootstrap4/bootstrap\.*js</exclude-pattern>
+		<exclude-pattern>/src/js/bootstrap5/bootstrap\.*js</exclude-pattern>
 		<exclude-pattern>/js/theme\.js</exclude-pattern>
 	</rule>
 </ruleset>
