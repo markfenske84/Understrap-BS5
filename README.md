@@ -6,7 +6,7 @@
 
 #### See: [Official Demo](https://understrap.com/understrap) | Read: [Official Docs Page](https://understrap.github.io/)
 
-# UnderStrap WordPress Theme Framework
+# UnderStrap WordPress Theme Framework (Bootstrap %)
 
 Website: [https://understrap.com](https://understrap.com)
 
@@ -17,6 +17,8 @@ OverStrap Child Themes: [https://understrap.com/overstrap/](https://understrap.c
 ## About
 
 I’m a huge fan of Underscores, Bootstrap, and Sass. Why not combine these into a solid WordPress Theme Framework? That’s what UnderStrap is. You can use it as a starter theme and build your own theme on top of it. Or you can use it as a parent theme and create your own child theme for UnderStrap.
+
+Note: This fork of Understrap is using the newly released stable version of Bootstrap 5.0.1.  Everything else in this theme is the same as what would be found in the standard Understrap theme.
 
 ## License
 UnderStrap WordPress Theme, Copyright 2013-2018 Holger Koenemann
@@ -31,7 +33,7 @@ See [changelog](CHANGELOG.md)
 ## Basic Features
 
 - Combines Underscore’s PHP/JS files and Bootstrap’s HTML/CSS/JS.
-- Comes with Bootstrap (v4) Sass source files and additional .scss files. Nicely sorted and ready to add your own variables and customize the Bootstrap variables.
+- Comes with Bootstrap (v5) Sass source files and additional .scss files. Nicely sorted and ready to add your own variables and customize the Bootstrap variables.
 - Uses a single minified CSS file for all the basic stuff.
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/) integration (v4.7.0)
 - Jetpack ready.
